@@ -19,12 +19,11 @@ A simple is score is calculated as follows:
 ```
 float k1 = minDistance / (float)(Mathf.Max(minDistance,(robotDistance + pilotDistance)));
        float k2 = Mathf.Sqrt(Mathf.Max( 1, pilotDistance));
-       int score = (int)(((MAXSCORE * k1) / k2) - (crah * 60));
+       int score = (int)(((MAXSCORE * k1) / k2) - (crash * 60));
 ```
-On which `minDistance` is the shortest distance between the food supply and the provided delivery point.
+On which `minDistance` is the shortest distance between the food supply and the provided delivery point. `pilotDistance` is the distance traveled while on AutoPilot mode, and `robotDistance` is the distance traveled while on manual mode. `crash` is the number of crashes while playing the game.
 
-Observe that is not a requirement to do the whole circuit in autopilot, but you are severely penalized for spending too much time on manual mode.
-
+Observe that is not a requirement to do the whole circuit in autopilot, but you are severely penalized for spending any time on manual mode. As an observation: After one meter driven in manual, the final score reduces drastically.
 
 ### Available Game Builds (compiled builds of the simulator)
 
