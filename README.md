@@ -29,7 +29,7 @@ Observe that is not a requirement to do the whole circuit in autopilot, but you 
 
 Instructions: Download the zip file, extract it and run (see How to Run) the execution file.
 
-Version alpha, 6/21/17
+Version release: 6/21/17
 ### [Linux](https://github.com/Davidnet/kiwix/releases/download/v1.0/Linuxuniversal-kiwicampus-challenge.zip)
 
 ### [Mac](https://github.com/Davidnet/kiwix/releases/download/v1.0/Macuniversal-kiwicampus-challenge.zip)
