@@ -103,7 +103,7 @@ Requirements: [Pillow](http://pillow.readthedocs.io/en/4.2.x/)
 A requirements.txt is provided.
 
 
-### Sending commands to the kiwibot:
+### Sending commands and receiving commands to the kiwibot:
 
 The program is accepting the following format (example in python provided):
 
@@ -118,6 +118,106 @@ The possible values are on the range:
 | Steering   |  {-1,1}                |
 | throttle  | {-1,1}                |
 
+You can choose the port number on the settings menu. On the next port available you will be receiving a JSON with the following information:
+
+```JSON
+{
+  "user": {
+    "name": "",
+    "email": "c@kiwicampus.com",
+    "nickname": "zubcarz",
+    "password": "",
+    "confirmPassword": ""
+  },
+  "frames": [
+    {
+      "time": 5.3613042831421,
+      "numberFrame": 0,
+      "image": {
+        "nameImage": "frame_0_ttl_1_agl_0_mil_5.361304.jpg",
+        "path": "D:\/Documents\/Develoment\/Unity\/KiwiBot-Simulation\/KiwiBot-Simulation\/Assets\/Kiwibot-Simulation\/Dataset\/zubcarz-7-28-2017 5-34-12 PM08\/frame_0_ttl_1_agl_0_mil_5.361304.jpg",
+        "sizeImage": "Size160X120"
+      },
+      "sensors": {
+        "distanceSensors": [
+          1024,
+          1024,
+          1024
+        ],
+        "gpsPosition": {
+          "x": -2.0697631835938,
+          "y": 2.4275255203247
+        },
+        "compass": {
+          "x": 358.68978881836,
+          "y": 357.04766845703,
+          "z": 0.03589978069067
+        }
+      },
+      "control": {
+        "throttle": 0,
+        "steering": 0
+      }
+    },
+    {
+      "time": 5.4881258010864,
+      "numberFrame": 1,
+      "image": {
+        "nameImage": "frame_1_ttl_1_agl_0_mil_5.488126.jpg",
+        "path": "D:\/Documents\/Develoment\/Unity\/KiwiBot-Simulation\/KiwiBot-Simulation\/Assets\/Kiwibot-Simulation\/Dataset\/zubcarz-7-28-2017 5-34-12 PM08\/frame_1_ttl_1_agl_0_mil_5.488126.jpg",
+        "sizeImage": "Size160X120"
+      },
+      "sensors": {
+        "distanceSensors": [
+          1024,
+          1024,
+          1024
+        ],
+        "gpsPosition": {
+          "x": -2.0881958007812,
+          "y": 2.8051929473877
+        },
+        "compass": {
+          "x": 358.66622924805,
+          "y": 357.27294921875,
+          "z": 359.94937133789
+        }
+      },
+      "control": {
+        "throttle": 0,
+        "steering": 0
+      }
+    },
+    {
+      "time": 5.592616558075,
+      "numberFrame": 2,
+      "image": {
+        "nameImage": "frame_2_ttl_1_agl_0_mil_5.592617.jpg",
+        "path": "D:\/Documents\/Develoment\/Unity\/KiwiBot-Simulation\/KiwiBot-Simulation\/Assets\/Kiwibot-Simulation\/Dataset\/zubcarz-7-28-2017 5-34-12 PM08\/frame_2_ttl_1_agl_0_mil_5.592617.jpg",
+        "sizeImage": "Size160X120"
+      },
+      "sensors": {
+        "distanceSensors": [
+          1024,
+          1024,
+          1024
+        ],
+        "gpsPosition": {
+          "x": -2.0958251953125,
+          "y": 2.9625587463379
+        },
+        "compass": {
+          "x": 358.67468261719,
+          "y": 357.27597045898,
+          "z": 359.98342895508
+        }
+      },
+      "control": {
+        "throttle": 0,
+        "steering": 0
+      }
+    }
+```
 
 
 
