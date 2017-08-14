@@ -13,6 +13,10 @@ Your main objective is to guide a kiwibot to move autonomously from a food suppl
 
 **Please play with the menu provided in the game, it can give you an overview of all the settings that are customizable**
 
+|![KiwiBot Challenge](./CircleIndicator.png) |![KiwiBot Challenge](./BoxIndicator.png) |
+|:---:|:---:|
+| Pick UP Point | Delivery Point |
+
 ## Score Calculation
 
 A simple is score is calculated as follows:
