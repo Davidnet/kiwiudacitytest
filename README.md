@@ -270,7 +270,7 @@ There are many tools and configurations that can be useful for developing the so
 May the force be with you
 
 
-![Kiwibot](./KIWIBOT.png){:height="50%" width="50%"}
+![Kiwibot](./KIWIBOT.png)
 
 # Contributors
 
