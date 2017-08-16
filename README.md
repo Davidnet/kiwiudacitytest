@@ -36,11 +36,11 @@ Observe that is not a requirement to do the whole circuit in autopilot, but you 
 Instructions: Download the zip file, extract it and run (see How to Run) the execution file.
 
 Version release: 6/21/17
-### [Linux](https://github.com/Davidnet/kiwix/releases/download/v1.0/Linuxuniversal-kiwicampus-challenge.zip)
+### [Linux](https://github.com/Davidnet/kiwix/releases/download/v1.1/kiwicampus-kiwibot-simulation-kiwisimulation-linux-1.zip)
 
-### [Mac](https://github.com/Davidnet/kiwix/releases/download/v1.0/Macuniversal-kiwicampus-challenge.zip)
+### [Mac](https://github.com/Davidnet/kiwix/releases/download/v1.1/kiwicampus-kiwibot-simulation-kiwisimulation-mac-1.zip)
 
-### [Windows](https://github.com/Davidnet/kiwix/releases/download/v1.0/Windows64-kiwicampus-challenge.zip)
+### [Windows](https://github.com/Davidnet/kiwix/releases/download/v1.1/kiwicampus-kiwibot-simulation-kiwisimulation-win64-bit-1.zip)
 
 ### **Releases on** [Link](https://github.com/Davidnet/kiwix/releases)
 
@@ -48,7 +48,7 @@ Version release: 6/21/17
 
 #### Linux
 
-In [Linux](https://github.com/Davidnet/kiwix/releases/download/v1.0/Linuxuniversal-kiwicampus-challenge.zip) the zip file contains two [ELF files](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format) that for security reasons are not marked to be executable. To give a file a executable flag the procedure is
+In [Linux](https://github.com/Davidnet/kiwix/releases/download/v1.1/kiwicampus-kiwibot-simulation-kiwisimulation-linux-1.zip) the zip file contains two [ELF files](https://en.wikipedia.org/wiki/Executable_and_Linkable_Format) that for security reasons are not marked to be executable. To give a file a executable flag the procedure is
 
 ```bash
 $ chmod a+x file
@@ -69,11 +69,11 @@ $ ./file
 
 #### Mac
 
-In [Mac](https://github.com/Davidnet/kiwix/releases/download/v1.0/Macuniversal-kiwicampus-challenge.zip) a single app package is provided, is independent of the architecture. Any problem, please submit a issue report to this repository.
+In [Mac](https://github.com/Davidnet/kiwix/releases/download/v1.1/kiwicampus-kiwibot-simulation-kiwisimulation-mac-1.zip) a single app package is provided, is independent of the architecture. Any problem, please submit a issue report to this repository.
 
 #### Windows
 
-In [Windows](https://github.com/Davidnet/kiwix/releases/download/v1.0/Windows64-kiwicampus-challenge.zip) only a 64 bit version is provided, if you are interested on a 32 build, please open an issue on the issue tracker.
+In [Windows](https://github.com/Davidnet/kiwix/releases/download/v1.1/kiwicampus-kiwibot-simulation-kiwisimulation-win64-bit-1.zip) only a 64 bit version is provided, if you are interested on a 32 build, please open an issue on the issue tracker.
 
 ### General Recommendations
 
