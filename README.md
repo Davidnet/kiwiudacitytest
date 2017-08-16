@@ -13,9 +13,11 @@ Your main objective is to guide a kiwibot to move autonomously from a food suppl
 
 **Please play with the menu provided in the game, it can give you an overview of all the settings that are customizable**
 
+The graphical targets are:
+
 |![KiwiBot Challenge](./CircleIndicator.png) |![KiwiBot Challenge](./BoxIndicator.png) |
 |:---:|:---:|
-| Pick UP Point | Delivery Point |
+| Pick up Point | Delivery Point |
 
 ## Score Calculation
 
@@ -122,7 +124,7 @@ The possible values are on the range:
 | Steering   |  {-1,1}                |
 | throttle  | {-1,1}                |
 
-You can choose the port number on the settings menu. On the next port available you will be receiving a JSON with the following information:
+**You can choose the port number on the settings menu. On the next port available you will be receiving a JSON with the following information:**
 
 ```JSON
 {
@@ -191,37 +193,13 @@ You can choose the port number on the settings menu. On the next port available 
         "throttle": 0,
         "steering": 0
       }
-    },
-    {
-      "time": 5.592616558075,
-      "numberFrame": 2,
-      "image": {
-        "nameImage": "frame_2_ttl_1_agl_0_mil_5.592617.jpg",
-        "path": "D:\/Documents\/Develoment\/Unity\/KiwiBot-Simulation\/KiwiBot-Simulation\/Assets\/Kiwibot-Simulation\/Dataset\/zubcarz-7-28-2017 5-34-12 PM08\/frame_2_ttl_1_agl_0_mil_5.592617.jpg",
-        "sizeImage": "Size160X120"
-      },
-      "sensors": {
-        "distanceSensors": [
-          1024,
-          1024,
-          1024
-        ],
-        "gpsPosition": {
-          "x": -2.0958251953125,
-          "y": 2.9625587463379
-        },
-        "compass": {
-          "x": 358.67468261719,
-          "y": 357.27597045898,
-          "z": 359.98342895508
-        }
-      },
-      "control": {
-        "throttle": 0,
-        "steering": 0
-      }
     }
+  ],
+}
+
 ```
+
+As you can see, at the beginning of communication you will get at the head of the JSON information about you user and registered information, frames information will include information about the image, such as the name and the filepath on which the image was recorded, you will also get sensors information which can help you to navigate around the city.
 
 
 
@@ -235,7 +213,7 @@ We suggest (not a requirement) to use the following Conda environments so you ca
 ## Installation
 
 
-See [Anaconda](https://www.continuum.io/downloads)
+More information can be obtained at [Anaconda](https://www.continuum.io/downloads)
 
 Be sure to add anaconda/bin to the PATH, either saying yes on the installation menu or adding to your profile file (e.g bash.rc, .profile ... etc).
 
@@ -253,11 +231,28 @@ Main packages provided: Tensorflow with GPU support and OpenCV. These environmen
 
 ### Mac
 
-TBA
+```
+$ conda env create -f kiwix_mac.yml
+```
+Main packages provided: Tensorflow **without** GPU support, and OpenCV is **not** provided. (Possible options to get OpenCV in Mac is to use [homebrew](https://brew.sh/))
 
 ### Windows
 
-TBA
+Is recommendable for Windows users to use Anaconda and install manually Tensorflow and OpenCV.
+
+### Sourcing environments
+
+To be able to use all the environments provided, conda prepends the path name (e.g kiwienv) onto your system command, to activate and deactivate environments use:
+
+**Linux, OS X**: `source activate snowflakes`
+
+**Windows**: `activate snowflakes`
+
+Deactivate the environment with the following:
+
+**Linux, OS X**: `source deactivate`
+
+**Windows**: `deactivate`
 
 ### Recommendations
 
