@@ -36,11 +36,11 @@ Observe that is not a requirement to do the whole circuit in autopilot, but you 
 Instructions: Download the zip file, extract it and run (see How to Run) the execution file.
 
 Version release: 6/21/17
-### [Linux](https://github.com/Davidnet/kiwix/releases/download/v1.1/kiwicampus-kiwibot-simulation-kiwisimulation-linux-1.zip)
+### [Linux](https://developer.cloud.unity3d.com/share/WkPh6LqQoG/)
 
-### [Mac](https://github.com/Davidnet/kiwix/releases/download/v1.1/kiwicampus-kiwibot-simulation-kiwisimulation-mac-1.zip)
+### [Mac](https://developer.cloud.unity3d.com/share/b1KZfAcQjG/)
 
-### [Windows](https://github.com/Davidnet/kiwix/releases/download/v1.1/kiwicampus-kiwibot-simulation-kiwisimulation-win64-bit-1.zip)
+### [Windows](https://developer.cloud.unity3d.com/share/ZkBwXBo7oM/)
 
 ### **Releases on** [Link](https://github.com/Davidnet/kiwix/releases)
 
