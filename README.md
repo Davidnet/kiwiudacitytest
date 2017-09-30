@@ -40,7 +40,7 @@ Some intermediate values:
 // Some points are deducted if total distance is longer than optimal
 `distanceFactor` = minDistance / max(minDistance,totalDistance) 
 
-// Severe penalization for driving in manual mode
+// Severe penalization for driving in manual mode.
 `manualFactor` = sqrt(max( 1, pilotDistance));
 ```
 
@@ -48,7 +48,7 @@ Hence:
 ```
 score = (MAXSCORE * distanceFactor / manualFactor) - crashPenalty;
 ```
-Observe that is not a requirement to do the whole circuit in autopilot, but you are severely penalized for spending any time on manual mode. After one meter driven in manual, the final score reduces drastically, so manual should not be used except for the most crucial of circumstances. 
+Observe that is not a requirement to do the whole circuit in autopilot, but you are severely penalized for spending any time on manual mode. After one meter driven in manual, the final score reduces drastically. If you drive 9 meters manually, your points will divide by 3. Manual mode should not be used except for the most crucial of circumstances (or training)
 
 ### Available Game Builds (compiled builds of the simulator)
 
