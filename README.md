@@ -33,11 +33,14 @@ To calculate score we define:
 Some intermediate values:
 ```
 `totalDistance` = robotDistance + pilotDistance
+
 //60 points are deducted per crash. Going into the road will count as a lot of crashes!!
 `crashPenalty` = crashes * 60 
+
 // Some points are deducted if total distance is longer than optimal
 `distanceFactor` = minDistance / max(minDistance,totalDistance) 
-// Penalization for driving in manual mode
+
+// Severe penalization for driving in manual mode
 `manualFactor` = sqrt(max( 1, pilotDistance));
 ```
 
