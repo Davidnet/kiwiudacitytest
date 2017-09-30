@@ -55,11 +55,11 @@ Observe that is not a requirement to do the whole circuit in autopilot, but you 
 Instructions: Download the zip file, extract it and run (see How to Run) the execution file.
 
 Version release: 6/21/17
-### [Linux](https://developer.cloud.unity3d.com/share/WkPh6LqQoG/)
+### [Linux](https://developer.cloud.unity3d.com/share/Wk3YKaV5hM/)
 
-### [Mac](https://developer.cloud.unity3d.com/share/Z1AKuq793G/)
+### [Mac](https://developer.cloud.unity3d.com/share/b1boJBSqnM/)
 
-### [Windows](https://developer.cloud.unity3d.com/share/ZkBwXBo7oM/)
+### [Windows](https://developer.cloud.unity3d.com/share/bJbOxBE52G/)
 
 ### **Releases on** [Link](https://github.com/Davidnet/kiwix/releases)
 
