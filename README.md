@@ -57,7 +57,7 @@ Instructions: Download the zip file, extract it and run (see How to Run) the exe
 Version release: 6/21/17
 ### [Linux](https://developer.cloud.unity3d.com/share/WkPh6LqQoG/)
 
-### [Mac](https://developer.cloud.unity3d.com/share/b1KZfAcQjG/)
+### [Mac](https://developer.cloud.unity3d.com/share/Z1AKuq793G/)
 
 ### [Windows](https://developer.cloud.unity3d.com/share/ZkBwXBo7oM/)
 
