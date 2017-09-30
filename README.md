@@ -21,15 +21,31 @@ The graphical targets are:
 
 ## Score Calculation
 
-A simple is score is calculated as follows:
+To calculate score we define:
 ```
-float k1 = minDistance / (float)(Mathf.Max(minDistance,(robotDistance + pilotDistance)));
-       float k2 = Mathf.Sqrt(Mathf.Max( 1, pilotDistance));
-       int score = (int)(((MAXSCORE * k1) / k2) - (crash * 60));
+`MAXSCORE` = 1000 points
+`minDistance` = shortest (optimal) distance between the food supply and the provided delivery point. 
+`pilotDistance` = distance traveled while on manual mode 
+`robotDistance` = distance traveled while on Autopilot mode
+`crashes` = number of crashes in the mission.
 ```
-On which `minDistance` is the shortest distance between the food supply and the provided delivery point. `pilotDistance` is the distance traveled while on AutoPilot mode, and `robotDistance` is the distance traveled while on manual mode. `crash` is the number of crashes while playing the game.
 
-Observe that is not a requirement to do the whole circuit in autopilot, but you are severely penalized for spending any time on manual mode. As an observation: After one meter driven in manual, the final score reduces drastically.
+Some intermediate values:
+```
+`totalDistance` = robotDistance + pilotDistance
+//60 points are deducted per crash. Going into the road will count as a lot of crashes!!
+`crashPenalty` = crashes * 60 
+// Some points are deducted if total distance is longer than optimal
+`distanceFactor` = minDistance / max(minDistance,totalDistance) 
+// Penalization for driving in manual mode
+`manualFactor` = sqrt(max( 1, pilotDistance));
+```
+
+Hence:
+```
+score = (MAXSCORE * distanceFactor / manualFactor) - crashPenalty;
+```
+Observe that is not a requirement to do the whole circuit in autopilot, but you are severely penalized for spending any time on manual mode. After one meter driven in manual, the final score reduces drastically, so manual should not be used except for the most crucial of circumstances. 
 
 ### Available Game Builds (compiled builds of the simulator)
 
