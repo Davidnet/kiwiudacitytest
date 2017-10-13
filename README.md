@@ -19,18 +19,18 @@ The graphical targets are:
 |:---:|:---:|
 | Pick up Point | Delivery Point |
 
-The top left interface items give important information too:
+The top right interface items give important information too:
 
 ![KiwiBot Challenge](./UI_Elements.png)
 
 From left to right: 
-Autopilot (default o): Enables computed autopilot. Useful for recording data for training. Bot will follow perfect route to pick up/delivery points. Autopilot is considered just the same as manual for score calculation.
-Time multipler (default t), Only works in missions, allows to run simulation at a faster rate
-Mute (default m) Mutes sound
-Targets: number of pickup/delivery targets to complete in mission
-Population: Number persons currently in the simulation 
-Record (default r): Shows when recording data
-TCP API (default p): Shows when a tcp connection was correctly stablished and the simulator is able to receive control inputs from an external program. Use it to test your models and record your score :)
+* Autopilot (default o): Enables computed autopilot. Useful for recording data for training. Bot will follow perfect route to pick up/delivery points. Autopilot is considered just the same as manual for score calculation.
+* Time multipler (default t), Only works in missions, allows to run simulation at a faster rate
+* Mute (default m) Mutes sound
+* Targets: number of pickup/delivery targets to complete in mission
+* Population: Number persons currently in the simulation 
+* Record (default r): Shows when recording data
+* TCP API (default p): Shows when a tcp connection was correctly stablished and the simulator is able to receive control inputs from an external program. Use it to test your models and record your score :)
 
 ## Score Calculation
 
