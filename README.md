@@ -21,7 +21,7 @@ The graphical targets are:
 
 The top left interface items give important information too:
 
-|![KiwiBot Challenge](./UI Elements.png) |
+![KiwiBot Challenge](./UI\ Elements.png)
 
 From left to right: 
 Autopilot (default o): Enables computed autopilot. Useful for recording data for training. Bot will follow perfect route to pick up/delivery points. Autopilot is considered just the same as manual for score calculation.
