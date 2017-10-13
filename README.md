@@ -88,13 +88,12 @@ score = (1000 * 0.8559 / 1.3784) - 60 = 560.93731
 Instructions: Download the zip file, extract it and run (see How to Run) the execution file.
 
 Version release: 6/21/17
-### [Linux](https://developer.cloud.unity3d.com/share/Wk3YKaV5hM/)
+### [Linux](https://developer.cloud.unity3d.com/share/-1nPL9w4az/)
 
-### [Mac](https://developer.cloud.unity3d.com/share/b1boJBSqnM/)
+### [Mac](https://developer.cloud.unity3d.com/share/-kBv7mPVpf/)
 
-### [Windows](https://developer.cloud.unity3d.com/share/bJbOxBE52G/)
+### [Windows](https://developer.cloud.unity3d.com/share/ZJos0-_VTf/)
 
-### **Releases on** [Link](https://github.com/Davidnet/kiwix/releases)
 
 ### How to run
 
