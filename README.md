@@ -23,32 +23,52 @@ The graphical targets are:
 
 To calculate score we define:
 ```
-`MAXSCORE` = 1000 points
-`minDistance` = shortest (optimal) distance between the food supply and the provided delivery point. 
-`pilotDistance` = distance traveled while on manual mode 
-`robotDistance` = distance traveled while on Autopilot mode
-`crashes` = number of crashes in the mission.
+MAXSCORE = 1000 points
+minDistance = shortest (optimal) distance between the food supply and the provided delivery point. 
+pilotDistance = distance traveled while on manual mode 
+robotDistance = distance traveled while on Autopilot mode
+crashes = number of crashes in the mission.
 ```
-
-Some intermediate values:
+So, what we do is first calculate the shortest possible distance between the initial and final destination (including pick up location). Some intermediate values:
 ```
-`totalDistance` = robotDistance + pilotDistance
-
-//60 points are deducted per crash. Going into the road will count as a lot of crashes!!
-`crashPenalty` = crashes * 60 
+totalDistance = robotDistance + pilotDistance
 
 // Some points are deducted if total distance is longer than optimal
-`distanceFactor` = minDistance / max(minDistance,totalDistance) 
+distanceFactor = minDistance / max(minDistance,totalDistance) 
 
 // Severe penalization for driving in manual mode.
-`manualFactor` = sqrt(max( 1, pilotDistance));
+manualFactor = sqrt(max( 1, pilotDistance))
+
+//60 points are deducted per crash. Going into the road will count as a lot of crashes!!
+crashPenalty = crashes * 60 
 ```
+
+As you can see, we calculate 3 penalty factors. `crashPenalty` is pretty straigth forward since it will just be deducted from total points. `distanceFactor` is the ratio between optimal and total distance. The closer-to-optimal the distance used in the test, the closer this factor will be to 1. The longer, the closer to 0. 
+On the other hand, `manualFactor` will divide the possible points. Even being a square root, any time on manual will reduce points quite drastically.
 
 Hence:
 ```
-score = (MAXSCORE * distanceFactor / manualFactor) - crashPenalty;
+score = (MAXSCORE * distanceFactor / manualFactor) - crashPenalty
 ```
 Observe that is not a requirement to do the whole circuit in autopilot, but you are severely penalized for spending any time on manual mode. After one meter driven in manual, the final score reduces drastically. If you drive 9 meters manually, your points will divide by 3. Manual mode should not be used except for the most crucial of circumstances (or training)
+
+One quick example. Suppose optimal distance in a test run is 1200m. Suppose the autopilot was able to complete the task in 1400m but crashed once and the human driver had to unstuck it, driving in manual 1.9m. So:
+
+```
+MAXSCORE = 1000 points
+minDistance = 1200
+pilotDistance = 1400
+robotDistance = 1.9
+crashes = 1
+totalDistance = 1401.9
+
+
+distanceFactor = 1200 / 1401.9 = 0.8559
+manualFactor = sqrt(1.9) = 1.3784
+crashPenalty = 1 * 60 = 60
+
+score = (1000 * 0.8559 / 1.3784) - 60 = 560.93731
+```
 
 ### Available Game Builds (compiled builds of the simulator)
 
